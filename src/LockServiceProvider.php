@@ -110,7 +110,7 @@ class LockServiceProvider extends ServiceProvider
 
         // Add the permissions which were set in the config file.
         if (! is_null($callback)) {
-            call_user_func($callback, $this->app['lock.manager'], $this->app['lock']);
+            call_user_func($callback, $this->app['lock.manager']);
         }
     }
 
